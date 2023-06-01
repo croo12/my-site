@@ -1,0 +1,24 @@
+.portfolio-page {
+  background-image: url("/portfolio/navy_back.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+}
+
+.portfolio-main {
+  display: flex;
+  flex-direction: column;
+
+  width: 67%;
+  margin: 0 auto;
+
+  padding: 1rem;
+}
+
+/* @media screen and (max-width: 600px) {
+  .portfolio-page {
+    
+  }
+} */
