@@ -1,0 +1,53 @@
+.feed-item {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  border-left: 0.125rem solid #ffffff;
+}
+
+.feed-badge {
+  height: 50px;
+  width: 50px;
+  background-color: #666691;
+  color: #ffffff;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+
+  position: absolute;
+  left: -25px;
+}
+
+.feed-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 2rem;
+}
+
+.feed-content > h2 {
+  padding-bottom: 0.5rem;
+  
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.feed-content > p {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.feed-content > p:last-child {
+  padding-bottom: 0;
+}

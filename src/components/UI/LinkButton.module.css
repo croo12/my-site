@@ -1,0 +1,22 @@
+.link-button {
+  border-radius: 16px;
+  border-color: transparent;
+
+  padding: 0.5rem 1rem;
+
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  cursor: pointer;
+
+  margin: 1rem;
+
+  color: white;
+}
+
+.link-button:hover {
+  color : black;
+  background-color: rgb(232, 232, 232);
+  border-color: rgba(128, 128, 128, 0.3);
+}

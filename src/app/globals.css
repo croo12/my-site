@@ -107,6 +107,33 @@ a {
   }
 }
 
+/* 스크롤바 전체 너비 */
+::-webkit-scrollbar {
+  width: 10px;
+  position: fixed;
+}
+
+/* 스크롤바 트랙 (바탕) */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* 스크롤바 핸들 (스크롤바 자체) */
+::-webkit-scrollbar-thumb {
+  background: black;
+  /* border-radius: 16px; */
+  width: 8px;
+}
+
+/* 스크롤바 핸들 호버 상태 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.hr-line {
+  margin: 2rem 0;
+}
+
 .cursor-effect {
   border-right: .15em solid white;
   /* The cursor */
@@ -122,4 +149,20 @@ a {
   50% {
     border-color: white;
   }
+}
+
+.background-effect {
+  position: relative;
+  z-index: 0;
+}
+
+.background-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }

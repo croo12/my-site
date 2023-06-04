@@ -1,4 +1,4 @@
-import CardComponent from "@/components/Card";
+import CardComponent from "@/components/UI/Card";
 
 const ComponentPage = () => {
   return (

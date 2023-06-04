@@ -1,8 +1,8 @@
 .portfolio-page {
   background-image: url("/portfolio/navy_back.png");
   background-position-x: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  /* background-size: 100% 100%; */
 
   min-height: 100vh;
 }
@@ -11,10 +11,17 @@
   display: flex;
   flex-direction: column;
 
-  width: 67%;
+  width: 60%;
   margin: 0 auto;
+  margin-top: 16px;
+  height: 100%;
 
-  padding: 1rem;
+  color: white;
+
+  background-color: #0B2447;
+  border-radius: 32px;
+
+  padding: 2rem;
 }
 
 /* @media screen and (max-width: 600px) {

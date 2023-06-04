@@ -1,5 +1,5 @@
 .portfolio-header {
-  padding-top: 8px;
+  padding-top: 2rem;
   position: relative;
 }
 
@@ -46,6 +46,27 @@
   color: white;
 }
 
-.divide-line {
-  margin-top: 8px;
+.background-effect {
+  position: relative;
+  z-index: 0;
 }
+
+.background-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.portfolio-nav { 
+  /* lg:mb-0 lg:grid-cols-4 lg:text-left" */
+  /* margin-bottom: 8rem; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
