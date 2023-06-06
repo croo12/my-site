@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import css from "./Sidebar.module.css";
 import LinkButton from './LinkButton';
+import Image from 'next/image';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,12 @@ const Sidebar = () => {
   return (
     <div className={`${css.sidebar}`}>
       <nav className={`${isOpen ? css.open : ''}`}>
-        <div>
-          <h1>로고 넣기</h1>
+        <div className={css["logo-box"]}>
+          <h1>펭귄 코딩 연합</h1>
+          {/* <Image src={"/PCU.png"} alt={'logo'} fill={true} /> */}
         </div>
         <ul>
-          {data.map((el, idx) => <li><LinkButton {...el} key={idx} /></li>) }
+          {data.map((el, idx) => <li key={idx}><LinkButton {...el} /></li>) }
         </ul>
         <button onClick={toggleSidebar}>
           {isOpen ? '<<' : '>>'}

@@ -45,6 +45,30 @@
   margin: 1rem 0;
 }
 
+.logo-box {
+  height: 25%;
+
+  background-color: white;
+  /* position: relative; */
+
+  background-image: url("/PCU.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(138, 24, 24);
+  font-size: x-large;
+
+  text-shadow: 
+  2px 2px #fff,
+  -2px 2px #fff,
+  2px -2px #fff,
+  -2px -2px #fff;
+}
+
 .sidebar button {
   position: fixed;
   left: 100%;

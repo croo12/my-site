@@ -1,6 +1,9 @@
 import P from "@/components/UI/P";
 import css from "./page.module.css";
-const PortfolioHome = () => {
+const PortfolioHome = async () => {
+
+ 
+
   const data = [
     `저는 항상 발전하기 위해 노력하고`,
     `새로운 지식을 얻는 것을 즐기는 풀스택 웹 개발자입니다.`,
