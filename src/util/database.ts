@@ -1,18 +1,20 @@
-// import { MongoClient, MongoClientOptions } from "mongodb";
+import { MongoClient, MongoClientOptions } from "mongodb";
 
-// const URL: string = `mongodb+srv://its19447:dlduddn1@portfolio.oshygre.mongodb.net/?retryWrites=true&w=majority`;
-// const options: MongoClientOptions = {};
+const URL : string = `mongodb+srv://its19447:dlduddn1@portfolio.oshygre.mongodb.net/?retryWrites=true&w=majority`;
+const options : MongoClientOptions = {};
 
-// let connectDB: Promise<MongoClient> | undefined;
+let mongo : Promise<MongoClient> | undefined;
 
-// if (process.env.NODE_ENV === 'development') {
-//   if (!globalThis.mongo) {
-//     globalThis.mongo = new MongoClient(URL, options).connect();
-//   }
+let connectDB : Promise<MongoClient> | undefined;
 
-//   connectDB = globalThis.mongo;
-// } else {
-//   connectDB = new MongoClient(URL, options).connect();
-// }
+if (process.env.NODE_ENV === 'development') {
+  if (!mongo) {
+    mongo = new MongoClient(URL, options).connect();
+  }
 
-// export default connectDB;
+  connectDB = mongo;
+} else {
+  connectDB = new MongoClient(URL, options).connect();
+}
+
+export { connectDB };

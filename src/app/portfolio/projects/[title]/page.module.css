@@ -1,0 +1,35 @@
+.project-container {
+  color : black;
+
+  text-align: center;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.project-header > div {
+  flex : 1;
+  padding: 1rem;
+}
+
+.image-box {
+  position: relative;
+
+  padding-top: 10rem;
+}
+
+.content-box {
+  padding: 1rem;
+}
+
+.content-box > p {
+  padding: 0.5rem;
+
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+}

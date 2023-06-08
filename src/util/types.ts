@@ -18,6 +18,8 @@ export type Project = {
   feeling : string,
   job : string,
   repository? : string,
+  position: string,
+  members: number,
 }
 
 export type LinkButton = {

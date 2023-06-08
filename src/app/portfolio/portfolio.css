@@ -2,7 +2,6 @@
   background-image: url("/portfolio/navy_back.png");
   background-position-x: center;
   background-repeat: repeat-y;
-  /* background-size: 100% 100%; */
 
   min-height: 100vh;
 }
