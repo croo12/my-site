@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const data = [
     {
-      url:"/", title:'Home'
+      url:"/", title:'Blog'
     },
     {
       url:"/portfolio", title:'Portfolio'
