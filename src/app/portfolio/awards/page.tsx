@@ -3,14 +3,9 @@ import Toggle from "@/components/UI/Toggle";
 
 const education = [
   {
-    title: "SSAFY 8기",
-    description: "SSAFY 8기 재학중",
-    date: "~ 현 재"
-  },
-  {
-    title: "SSAFY",
-    description: "삼성 청년 소프트웨어 아카데미 8기 입소",
-    date: "2022.07"
+    title: "SSAFY 8기 수료",
+    description: "Certificate 최우수 (상위 5%)",
+    date: "2022.07 ~ 2023.06.16"
   },
   {
     title: "JSL인재개발원 수료",
@@ -30,6 +25,11 @@ const education = [
 ]
 
 const achieve = [
+  {
+    title: "성적 우수상",
+    description: "SSAFY - 대표이사 상 우수상",
+    date: "2023.06.16"
+  },
   {
     title: "자율프로젝트 우수 프로젝트 - 3등",
     description: "SSAFY - 우아한 우리 아이 한글교육 어플리케이션",
