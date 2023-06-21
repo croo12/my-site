@@ -7,8 +7,6 @@ const ProjectDetail = async ({ params }: { params: { title: string } }) => {
 
   const data = await getData(decodeURIComponent(params.title));
 
-  // console.log(data);
-
   return (
     <CardComponent>
       <div className={css["project-container"]}>

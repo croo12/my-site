@@ -26,7 +26,7 @@ const education = [
 
 const achieve = [
   {
-    title: "성적 우수상",
+    title: "성적 우수상 수상",
     description: "SSAFY - 대표이사 상 우수상",
     date: "2023.06.16"
   },
@@ -34,6 +34,11 @@ const achieve = [
     title: "자율프로젝트 우수 프로젝트 - 3등",
     description: "SSAFY - 우아한 우리 아이 한글교육 어플리케이션",
     date: "2023.05.25"
+  },
+  {
+    title: "삼성 SW 역량테스트 B형 취득",
+    description: "Level B 취득",
+    date: "2023.05.17"
   },
   {
     title: "특화프로젝트 최우수 프로젝트 - 1등",

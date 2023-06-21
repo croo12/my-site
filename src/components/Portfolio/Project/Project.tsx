@@ -10,10 +10,10 @@ const Project: React.FC<Project> = ({ image, alt, title, content, feeling, job, 
     <>
       <div className={css["project-card"]}>
         <h1>{title}</h1>
-        <h4>{members}</h4>
+        <h4>{members}人 프로젝트</h4>
         <h4>{content.split("\n")[0]}</h4>
         <div className={css["project-img"]}>
-          <div style={{ width: "100%", height: "100%" }}>
+          <div style={{ width: "100%", height: "100%", minHeight : "400px"}}>
             <Image src={image} alt={alt} fill={true} />
           </div>
           <div className={css["button-box"]}>
